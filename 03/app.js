@@ -16,13 +16,29 @@
 //
 // log.innerHTML +='<div style = "color : red">hello</div>';
 
-var clickCount = 0;
-function popup(event){
-    console.log(++clickCount);
-    console.log(arguments, this ,event ,event.type,event.currentTarget);
-}
-document.body.addEventListener('click', popup);
+// var clickCount = 0;
+// function popup(event){
+//     console.log(++clickCount);
+//     console.log(arguments, this ,event ,event.type,event.currentTarget);
+// }
+// document.body.addEventListener('click', popup);
+//
+// document.body.addEventListener('click', function(){
+//     console.log("click");
+// });
 
-document.body.addEventListener('click', function(){
-    console.log("click");
-});
+var divs = document.querySelectorAll('#wrap div');
+
+
+
+function changBg(e){
+  console.log('changBg');
+
+  console.log(e.currentTarget);
+  console.log(e.target);
+  e.currentTarget.style.backgroundColor = "blue";
+}
+
+for(var i = 0; i < divs.length; i++){
+  divs[i].addEventListener('click',changBg);
+}
