@@ -26,10 +26,11 @@ function view(number){
     }
   }else {
     if (max < number) {
-      number = max;
+      page = max;
     }else {
-      number = 0;
+      page = 0;
     }
+
     alert("페이지 범위 밖입니다.");
   }
 }
