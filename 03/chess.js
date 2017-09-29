@@ -32,7 +32,7 @@ function changBg(e){
   if (tmpValue != null) {
     tmpValue.style.backgroundColor = tmpColor;
   }
-  
+
   console.log('changBg');
 
   console.log(e.currentTarget);
