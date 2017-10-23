@@ -37,10 +37,14 @@ function view(number){
 
 view(page);
 
-document.getElementById("before").addEventListener("click", function(){
+var before = document.getElementById("before");
+var after = document.getElementById("after");
+
+before.addEventListener("click", function(){
   view(--page);
 });
 
-document.getElementById("after").addEventListener("click", function(){
+
+after.addEventListener("click", function(){
   view(++page);
 });
