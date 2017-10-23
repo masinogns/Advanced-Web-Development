@@ -33,8 +33,8 @@ function removeTag(e){
   var currentNode = e.target.parentElement;
   console.log(currentNode);
 
-  if (currentNode.className == "content") {
-    console.log("11");
+  if (e.target.className == "delete" && currentNode.className == "content") {
+
     currentNode.remove();
   }
 
