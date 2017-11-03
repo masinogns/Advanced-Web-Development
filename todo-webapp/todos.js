@@ -2,9 +2,10 @@
 var text = document.querySelector(".text");
 var block = document.querySelector(".block");
 var content = document.querySelector(".content");
+var checkbox = document.querySelector(".toggle-checked");
 
-console.log(block);
-console.log(content);
+// console.log(block);
+// console.log(content);
 
 function senseEnter(e){
   if (e.keyCode == 13 && text.value != "") { // enter == 13
@@ -27,16 +28,24 @@ function senseEnter(e){
 
 block.addEventListener('click', removeTag);
 
+
 function removeTag(e){
-  console.log(e.target.className);
+  // console.log(e.target.className+"ddd");
 
   var currentNode = e.target.parentElement;
-  console.log(currentNode);
+  console.log(currentNode.className);
 
   if (e.target.className == "delete" && currentNode.className == "content") {
-
     currentNode.remove();
   }
 
-  // e.target.parentElement.remove;
+  if (e.target.className == "toggle-checked" && e.target.checked == true) {
+    console.log("줄긋기");
+    currentNode.children[2].style.textDecoration="line-through";
+    currentNode.children[2].style.color ="gray";
+  }else {
+    console.log("노노 복귀");
+    currentNode.children[2].style.textDecoration="none";
+    currentNode.children[2].style.color ="black";
+  }
 }
