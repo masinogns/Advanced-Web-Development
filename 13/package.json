@@ -1,0 +1,17 @@
+{
+  "name": "13",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "json-server": "^0.12.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "json-server --watch db.json",
+    "dev": "serve .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

@@ -1,0 +1,20 @@
+{
+  "name": "12",
+  "version": "1.0.0",
+  "description": "",
+  "main": "myfs.js",
+  "dependencies": {
+    "jquery": "^3.2.1",
+    "pretty-bytes": "^4.0.2"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "gulp:test": "gulp default"
+  },
+  "author": "",
+  "license": "ISC"
+}
