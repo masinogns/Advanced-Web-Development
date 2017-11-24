@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
-    "json-server": "^0.12.1"
+    "json-server": "^0.12.1",
+    "serve": "^6.4.1"
   },
   "devDependencies": {},
   "scripts": {
